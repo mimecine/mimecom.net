@@ -1,11 +1,35 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>M I M E C O M</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="w-screen h-screen grid place-items-center bg-gray-300 font-mono">
+    <section class="max-w-xl p-8">
+      I'm <a href="https://marcoromeny.com/" target="marco">Marco</a>. I do <a
+        href="http://kioskkiosk.com/"
+        target="kiosk">KIOSK</a
+      > with <a href="http://instagram.com/alisagrifo" target="ig:alisa"
+        >@alisagrifo</a
+      >, arty stuff (usally posted at <a
+        href="http://instagram.com/marcoromeny"
+        target="ig:marco">@marcoromeny</a
+      > , web stuff (no you don't want to see code samples), computer consulting,
+      some carpentry, some electronics and love problems. I have affective disorders
+      that I like. I took this domain name after seeing <a
+        href="https://en.wikipedia.org/wiki/Wild_Palms"
+        target="google">Wild Palms</a
+      > and getting obsessed. <a
+        href="mailto:marco@mimecom.net?subject=You+are+almost+as+good+as+I+am!"
+        >Let's talk!</a
+      >
+    </section>
+  </body>
+</html>
