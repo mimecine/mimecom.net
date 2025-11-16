@@ -12,6 +12,6 @@ export default defineConfig({
   },
 
   integrations: [alpinejs()],
-  adapter: cloudflare({ imageService: "compile" }),
+  adapter: cloudflare(),
   
 });
