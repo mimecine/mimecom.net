@@ -10,10 +10,10 @@ let { site_name = "The Site" } = Astro.props;
 <header class="flex justify-around">
   <nav class="header-nav w-40 md:w-60 md:flex justify-between items-center">
     <a href="/" class="header-logo w-full">
-    <Image src={Smile} alt="Smile Logo" width="750" height="750" 
+    <Image src={Smile} alt="Smile Logo" width="300" height="300" 
     class="inline-block w-40 md:w-60 align-middle mr-2 invert" 
-    widths={[100,300,600,Smile.width]}
-    sizes="(max-width: 600px) 100px, (max-width: 1200px) 300px, 600px"
+    widths={[100,300]}
+    sizes="(max-width: 600px) 100px, 300px"
     />
     </a>
     <ul class="header-links hidden sm:flex">
