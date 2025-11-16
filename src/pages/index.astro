@@ -1,11 +1,72 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "@layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Mimecom - Digital Therapy" classes="grid place-items-center h-full w-full">
+  <section>
+    <p>When you need a</p>
+    <h1 class="text-4xl font-bold text-green-300 mt-4">- Website Done</h1>
+    <p class="text-green-200">
+      Need a portfolio? A simple site? A complicated one? A business site? A
+      shop? I can help you set it up, host it, maintain it. I design and
+      program. Using Astro, Shopify, or whatever fits your needs best. Fast,
+      secure, reliable. Including domain name advice and setup, email setup, SEO
+      basics, analytics, backups, updates, security hardening and more.
+    </p>
+    <h1 class="text-4xl font-bold text-green-300 mt-4">- Digital Handyman</h1>
+    <p class="text-green-200">
+      Planning your smarter home. Selecting the right things. Wifi - Mesh or not
+      and where to place it. Printers (no, there is no perfect printer). Putting
+      it all together. Apple problems and solutions. Linux (what?) anything.
+      Backup plans. Cable management. How to do X. With Z. Best security
+      practices. Explain things like you are five years old. Explain it like you
+      are 52 years old who isn't very technical. Listen to your gripes with
+      technology with great patience and sympathy. And solve your problems. Just
+      like therapy but digital - digital therapy.
+    </p>
+    <h1 class="text-4xl font-bold text-green-300 mt-4">- Your Car Repaired</h1>
+    <p class="text-green-200">
+      I am not your man. But I do know a great mechanic in Tangiers who is fair,
+      honest, reliable and good at what he does. Here? I heard of one who is
+      honest.
+    </p>
+  </section>
+  <section style="hidden">
+    <p>When you need to know my</p>
+    <h2 class="text-3xl font-bold text-green-300 mt-4">- Rates</h2>
+    <p class="text-green-200">
+      For the short handyman projects I charge €110<sup>1</sup> per hour rounded to the
+      nearest half hour, but a minimum of a full hour. For website projects I
+      charge a fixed fee depending on the project. Car mechanic referrals are
+      free of charge, but I expect being offered a glass of lemonade. Or wine.
+    </p>
+    <p class="italic text-sm md:text-base mt-4">1) Like many therapists, I do offer a sliding scale.</p>
+  </section>
+
+  <section>
+    <p>When it's time to</p>
+    <h2 class="text-3xl font-bold text-green-300 mt-4">- Getting in Touch</h2>
+    <p class="text-green-200">
+      Email <a href="mailto:marco@mimecom.net">marco@mimecom.net</a>, call
+      <a href="tel:+19179452978" class="text-green-200 text-shadow-[0_0_3px_white]"
+        >+19179452978</a
+      >, or find me at the <a
+        href="https://maps.app.goo.gl/VfPvedZsLPr2s3tg6"
+        class="text-green-200 text-shadow-[0_0_3px_white]"
+        >Apt market on saturday morning</a
+      > when I'm getting my groceries.
+    </p>
+  </section>
 </Layout>
+<style>
+  @reference "@styles/global.css";
+  section {
+    @apply md:w-2xl max-w-full mx-auto my-8 p-4 bg-green-900 border border-green-700;
+  }
+  a {
+    @apply text-green-200 hover:text-green-800 no-underline text-shadow-[0_0_3px_white];
+  }
+</style>

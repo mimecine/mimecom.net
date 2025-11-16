@@ -1,0 +1,44 @@
+---
+import Image from 'astro/components/Image.astro';
+import Smile from 'public/smile.png';
+interface Props {
+  site_name?: string;
+}
+let { site_name = "The Site" } = Astro.props;
+---
+
+<header class="flex justify-around">
+  <nav class="header-nav w-40 md:w-60 md:flex justify-between items-center">
+    <a href="/" class="header-logo w-full">
+    <Image src={Smile} alt="Smile Logo" width="750" height="750" 
+    class="inline-block w-40 md:w-60 align-middle mr-2 invert" 
+    widths={[100,300,600,Smile.width]}
+    sizes="(max-width: 600px) 100px, (max-width: 1200px) 300px, 600px"
+    />
+    </a>
+    <ul class="header-links hidden sm:flex">
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<style>
+  @reference "@styles/global.css";
+  .header-nav {
+    @apply flex justify-between items-center;
+  }
+  .header-logo {
+    @apply text-xl md:text-2xl lg:text-4xl font-bold;
+  }
+  .header-links {
+    @apply flex space-x-4 hidden;
+    li {
+      @apply list-none;
+    }
+  }
+  .header-logo,
+  .header-links a {
+    @apply text-white hover:text-green-800 no-underline text-shadow-[0_0_3px_white];
+  }
+</style>
