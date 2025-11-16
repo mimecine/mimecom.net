@@ -5,10 +5,13 @@ import alpinejs from "@astrojs/alpinejs";
 import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
+  site: "https://mimecom.net",
+  output: "server",
   vite: {
     plugins: [tailwindcss()],
   },
 
   integrations: [alpinejs()],
-  adapter: cloudflare(),
+  adapter: cloudflare({ imageService: "compile" }),
+  
 });
