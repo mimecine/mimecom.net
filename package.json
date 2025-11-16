@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "bun run build && bunx wrangler dev",
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
