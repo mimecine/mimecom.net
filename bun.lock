@@ -7,6 +7,7 @@
       "dependencies": {
         "@astrojs/alpinejs": "^0.4.9",
         "@astrojs/cloudflare": "^12.6.10",
+        "@sveltia/cms": "^0.119.0",
         "@tailwindcss/vite": "^4.1.17",
         "@types/alpinejs": "^3.13.11",
         "alpinejs": "^3.15.1",
@@ -248,6 +249,8 @@
     "@sindresorhus/is": ["@sindresorhus/is@7.1.1", "", {}, "sha512-rO92VvpgMc3kfiTjGT52LEtJ8Yc5kCWhZjLQ3LwlA4pSgPpQO7bVpYXParOD8Jwf+cVQECJo3yP/4I8aZtUQTQ=="],
 
     "@speed-highlight/core": ["@speed-highlight/core@1.2.12", "", {}, "sha512-uilwrK0Ygyri5dToHYdZSjcvpS2ZwX0w5aSt3GCEN9hrjxWCoeV4Z2DTXuxjwbntaLQIEEAlCeNQss5SoHvAEA=="],
+
+    "@sveltia/cms": ["@sveltia/cms@0.119.0", "", {}, "sha512-nDNscv+UyPyTNOqqBsHA5r5RobdFtYvzhyCYm3rVZJi1cXKTsfGKjPYT41kTopJGvNof/lHEMp7T6hrLfPqxEQ=="],
 
     "@swc/helpers": ["@swc/helpers@0.5.17", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A=="],
 

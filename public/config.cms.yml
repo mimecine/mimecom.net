@@ -1,0 +1,50 @@
+site_url: https://ar-new.pages.dev
+display_url: /
+logo_url: /favicon.svg
+#local_backend: true
+
+backend:
+  name: github
+  repo: mimecine/mimecom.net # GitHub repository name
+  branch: master # Branch to update (optional; defaults to master)
+  auth_type: pkce # Required for PKCE auth
+  app_id: Iv23lityH8jrQXgevU9K
+#  base_url: https://cms-auth.mimecom.workers.dev/ # Github OAuth Proxy URL where it's hosted. In use, https://github.com/sveltia/sveltia-cms-auth
+
+media_folder: "src/media"
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 1000000000
+      slugify_filename: true
+      transformations:
+        raster_image: # original format
+          format: webp # new format, only `webp` is supported
+          quality: 95 # default: 85
+          width: 2048 # default: original size
+          height: 2048 # default: original size
+        svg:
+          optimize: true
+  stock_assets:
+    providers: []
+
+collections:
+  - label: "Pages"
+    label_singular: "Page"
+    name: "pages"
+    preview_path: "{{slug}}"
+    folder: "src/pages"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../layouts/Page.astro",
+        }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }

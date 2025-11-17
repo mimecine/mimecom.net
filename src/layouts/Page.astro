@@ -1,0 +1,36 @@
+---
+import { type CollectionEntry, getCollection, getEntry } from "astro:content";
+
+import { Image } from "astro:assets";
+
+import Layout from "./Layout.astro";
+
+interface Props {
+
+  title: string;
+
+  featuredIimage?: string;
+
+  frontmatter?: Record<string, unknown>;
+
+}
+
+
+
+const propsTyped = Astro.props as Props;
+
+let { title, featuredIimage, frontmatter, ...props } = propsTyped;
+
+title = title || (typeof frontmatter?.title === "string" ? frontmatter.title : "Untitled");
+
+
+
+<Layout title={title} classes="grid place-items-center h-full w-full">
+
+  <section>
+
+<slot/>
+
+  </section>
+
+</Layout>
