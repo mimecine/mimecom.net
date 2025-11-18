@@ -1,7 +1,7 @@
-site_url: https://ar-new.pages.dev
+site_url: https://mimecom.net
+title: Mimecom
 display_url: /
 logo_url: /smile.png
-#local_backend: true
 
 backend:
   name: github
@@ -9,7 +9,6 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
   auth_type: pkce # Required for PKCE auth
   app_id: Iv23lityH8jrQXgevU9K
-#  base_url: https://cms-auth.mimecom.workers.dev/ # Github OAuth Proxy URL where it's hosted. In use, https://github.com/sveltia/sveltia-cms-auth
 
 media_folder: "src/media"
 
