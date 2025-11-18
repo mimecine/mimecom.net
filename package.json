@@ -9,15 +9,15 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
-    "@astrojs/cloudflare": "^12.6.10",
+    "@astrojs/cloudflare": "^12.6.11",
     "@sveltia/cms": "^0.119.0",
     "@tailwindcss/vite": "^4.1.17",
     "@types/alpinejs": "^3.13.11",
-    "alpinejs": "^3.15.1",
-    "astro": "^5.15.6",
+    "alpinejs": "^3.15.2",
+    "astro": "^5.15.9",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "wrangler": "^4.48.0"
+    "wrangler": "^4.49.0"
   }
 }
